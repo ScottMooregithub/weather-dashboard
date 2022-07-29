@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--boiler plate as well as style stylesheet-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Header tex-->
+    <title>Weather Dashboard</title>
+</head>
+
+<!--navigation sidebar-->
+
+<body>
+    <nav class="navbar">
+        <h1 span class="navbar-text mb-0 h1 w-100 text-center">Weather Dashboard</span>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 bg-light">
+                <p class="search-header my-1"></p>
+                <div class="input-group mb-3">
+                    <input id="city-input" type="text" class="form-control" placeholder="Search a Location">
+                    <div class="input-group-append"></div>
+                </div>
+                <button class="btn btn-primary mb-3" type="button" id="search-button">Search </button>
+
+                <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear</button>
+
+                <form id="history"></form>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-12 border border-dark">
+                        <div class="row">
+                            <div class="col-8">
+                                <span id="city-name" class="city-name"></span>
+                                <img id="current-pic">
+                            </div>
+                        </div>
+                        <div class="row font-weight-bold">
+                            <div class="col-8">
+                                <p id="temperature"></p>
+                            </div>
+                        </div>
+                        <div class="row font-weight-bold">
+                            <div class="col-8">
+                                <p id="humidity"></p>
+                            </div>
+                        </div>
+                        <div class="row font-weight-bold">
+                            <div class="col-8">
+                                <p id="wind-speed"></p>
+                            </div>
+                        </div>
+                        <div class="row font-weight-bold">
+                            <div class="col-8">
+                                <p id="UV-index"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col forecast bg-dark text-white mt-3 ml-3 mb-3 mr-3"></div>
+                    <div class="col forecast bg-dark text-white mt-3 ml-3 mb-3 mr-3"></div>
+                    <div class="col forecast bg-dark text-white mt-3 ml-3 mb-3 mr-3"></div>
+                    <div class="col forecast bg-dark text-white mt-3 ml-3 mb-3 mr-3"></div>
+                    <div class="col forecast bg-dark text-white mt-3  ml-3 mb-3 mr-3"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

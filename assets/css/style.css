@@ -1,0 +1,43 @@
+.navbar-text {
+  background-color: white;
+  text-decoration: underline;
+  color: #000;
+  font-size: 75px;
+}
+
+.search-header {
+  font-size: 27px;
+  font-weight: bold;
+  color: #000;
+}
+
+.city-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.forecast-date {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 0%;
+  background-color: #000;
+  color: white;
+}
+
+#search-button {
+  justify-content: space-evenly;
+  background-color: #000;
+}
+
+#clear-history {
+  justify-content: space-evenly;
+  background-color: #000;
+}
+
+.row {
+  background-color: white;
+}
